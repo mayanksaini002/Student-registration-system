@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+    
+  .navbar{
+    border-bottom: 3px solid rgb(255, 255, 255);
+    height: 5rem;
+    background-color: rgb(4, 3, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar h1{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6); /* Subtle white shadow */
+    transition: all 2s ease;
+  }
+
+  .navbar h1:hover{
+    transform: scale(1.2);
+  }
+
+  .container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+
+  .student-form {
+    width: 60%;
+    margin: 40px;
+    margin-top: 7rem;
+    margin-left: 10%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10%;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(189, 185, 185, 0.8);
+    
+}
+  
+  .form-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-input:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .submit-btn {
+    width: 50%;
+    margin-left: 20%;
+    height: 25%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5c836;
+    color: #141212;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #da9b1f;
+  }
+  
+  .submit-btn:active {
+    transform: translateY(2px);
+  }
+
+  .table-container {
+    width: 100%;
+    margin-right: 100px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .table-row {
+    display: grid;
+    padding-left: 5px;
+    grid-template-columns: 2fr 1fr 4fr 2fr 1fr 1fr; /* Define column sizes */
+    border-bottom: 1px solid black;
+    height: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+  }
+
+ 
+  
+  .header {
+    font-weight: bold;
+    padding-top: 9px;
+    padding-left:4px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #3c3a3a;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    height: 45px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .table-body {
+    max-height: 300px; 
+    max-width: 1000px;
+    overflow-y: auto;
+  }
+  
+
+  
+ 
+  
+  /* hover effect for rows */
+  .table-body .table-row:hover {
+    background-color: #f1f1f1;
+  }
+
+  .delButton{
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    font-size: 10px; /* Font size */
+    margin: 2px 1px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+.delButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.delButton:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow when clicked */
+    transform: translateY(2px); /* Move button down slightly */
+}
+
+  .resButton{
+    background-color: #af6d4c; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    font-size: 10px; /* Font size */
+    margin: 2px 1px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+.resButton:hover {
+    background-color: #cb6d3f; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.resButton:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow when clicked */
+    transform: translateY(2px); /* Move button down slightly */
+}
+  
+  body{
+    background-color: #ffffb5;
+    background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%);
+  }
+  
