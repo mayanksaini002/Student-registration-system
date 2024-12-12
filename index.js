@@ -1,3 +1,5 @@
+ //calling all the required elements
+ 
  const studentName = document.querySelector("#student-name");
 
  const studentId = document.querySelector("#student-id");
@@ -11,10 +13,11 @@
  const detailsList = document.querySelector(".table-body");
 
  let editingRow = null;
-
+  //adding eventlistener to submit details button
  button.addEventListener("click" , addStudentDetails);
 
-
+  
+ //function to add details from input fields to the created table(row-wise).
 
  function addStudentDetails(){
 
@@ -56,19 +59,20 @@
     num2.innerHTML= studentContact.value;
     name.appendChild(num2);
  
-
+   //adding delete button to delete entries
     const delButton = document.createElement("button");
     delButton.classList.add("delButton");
     delButton.innerHTML = "delete";
     name.appendChild(delButton);
 
+   //adding edit button to edit entries
     const resButton = document.createElement("button");
     resButton.classList.add("resButton");
     resButton.innerHTML = "Edit";
     name.appendChild(resButton);
    
 
-
+   //appending name to detailslist
     detailsList.appendChild(name);
 
    
@@ -101,7 +105,7 @@
 
    
 }
-  
+  //code to validate entries in the input field
 function validateInputs() {
     const nameRegex = /^[a-zA-Z\s]+$/;
     const idRegex = /^\d+$/;
